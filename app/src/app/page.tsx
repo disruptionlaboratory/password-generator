@@ -63,7 +63,6 @@ export default function Home() {
             />
             {t(INCLUDE_DIGITS)}
           </label>
-
           <label>
             <input
               type="checkbox"
@@ -73,7 +72,6 @@ export default function Home() {
             />
             {t(INCLUDE_LOWERCASE)}
           </label>
-
           <label>
             <input
               type="checkbox"
@@ -83,7 +81,6 @@ export default function Home() {
             />
             {t(INCLUDE_UPPERCASE)}
           </label>
-
           <label>
             <input
               type="checkbox"
@@ -93,7 +90,6 @@ export default function Home() {
             />
             {t(INCLUDE_SPECIAL_CHARACTERS)}
           </label>
-
           <label>
             {t(PASSWORD_LENGTH)}
             <input

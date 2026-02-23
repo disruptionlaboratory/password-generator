@@ -20,7 +20,6 @@ export default [
     key: INCLUDE_LOWERCASE,
     value: "소문자 포함",
   },
-
   {
     key: INCLUDE_UPPERCASE,
     value: "대문자 포함",

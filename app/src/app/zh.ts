@@ -20,7 +20,6 @@ export default [
     key: INCLUDE_LOWERCASE,
     value: "包含小写",
   },
-
   {
     key: INCLUDE_UPPERCASE,
     value: "包含大写",

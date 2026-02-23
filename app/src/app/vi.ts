@@ -20,7 +20,6 @@ export default [
     key: INCLUDE_LOWERCASE,
     value: "Bao gồm chữ thường",
   },
-
   {
     key: INCLUDE_UPPERCASE,
     value: "Bao gồm chữ hoa",
