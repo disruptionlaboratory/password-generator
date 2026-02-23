@@ -163,3 +163,14 @@ Okay, so the app/ folder is added to the route folder and everything is set up, 
 - "You are using Node.js 18.20.3. For Next.js, Node.js version ">=20.9.0" is required."
 - Fixed by using `nvm use 20` and then `npm run dev
 - http://localhost:3000
+
+
+### Server-side component vs client-side React component
+
+By default, everything is rendered server-side.
+
+In order to use client-side React, you need to add the following to the top of each page.
+
+```js
+"use client";
+```
