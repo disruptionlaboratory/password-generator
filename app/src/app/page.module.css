@@ -43,11 +43,27 @@
         }
     }
     .spinner, .clipboard {
+        display: flex;
+        gap: 10px;
+        font-size: 18px;
         background-color: transparent;
         border: 0;
         cursor: pointer;
         svg {
             transform: scale(1.5);
+            fill: #059494;
+        }
+    }
+
+    .spinner {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #059494;
+        padding: 10px;
+        svg {
+            transform: scale(1);
         }
     }
 
@@ -58,7 +74,7 @@
 
         .passwordContainer {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             gap: 10px;
             align-content: center;
             justify-content: center;

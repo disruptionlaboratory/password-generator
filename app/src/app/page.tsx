@@ -108,7 +108,7 @@ export default function Home() {
           <div className={styles.passwordContainer}>
             <div className={styles.password}>{password}</div>
             <button className={styles.spinner} onClick={regenerate}>
-              <Spinner strokeColor={"#fff"} />
+              <Spinner strokeColor={"#fff"} /> Generate
             </button>
           </div>
           <button
