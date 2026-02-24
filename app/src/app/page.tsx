@@ -3,12 +3,13 @@
 import React, { useState, useEffect } from "react";
 import { generatePassword, PasswordOptions } from "./utils/password";
 import {
+  GENERATE,
   INCLUDE_DIGITS,
   INCLUDE_LOWERCASE,
   INCLUDE_SPECIAL_CHARACTERS,
   INCLUDE_UPPERCASE,
   PASSWORD_GENERATOR,
-  PASSWORD_LENGTH,
+  PASSWORD_LENGTH
 } from "@/app/strings";
 import styles from "./page.module.css";
 import { getTranslator } from "@/app/utils/translation";
@@ -108,7 +109,7 @@ export default function Home() {
           <div className={styles.passwordContainer}>
             <div className={styles.password}>{password}</div>
             <button className={styles.spinner} onClick={regenerate}>
-              <Spinner strokeColor={"#fff"} /> Generate
+              <Spinner strokeColor={"#fff"} /> {t(GENERATE)}
             </button>
           </div>
           <button

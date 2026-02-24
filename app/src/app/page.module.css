@@ -6,12 +6,12 @@
     align-content: center;
     align-items: center;
     justify-content: center;
-    padding: 20px
+    padding: 20px;
 }
 
 .main {
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -22,9 +22,11 @@
     .password {
         word-break: break-word;
         font-size: 24px;
-        color: orangered;
+        color: #afaeae;
         font-weight: bold;
         overflow: scroll;
+        background-color: #171717;
+        padding: 20px;
     }
     form {
         display: flex;
@@ -49,6 +51,7 @@
         background-color: transparent;
         border: 0;
         cursor: pointer;
+        color: #fff;
         svg {
             transform: scale(1.5);
             fill: #059494;

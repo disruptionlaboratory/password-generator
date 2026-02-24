@@ -1,10 +1,11 @@
 import {
+  GENERATE,
   INCLUDE_DIGITS,
   INCLUDE_LOWERCASE,
   INCLUDE_SPECIAL_CHARACTERS,
   INCLUDE_UPPERCASE,
   PASSWORD_GENERATOR,
-  PASSWORD_LENGTH,
+  PASSWORD_LENGTH
 } from "@/app/strings";
 
 export default [
@@ -32,4 +33,8 @@ export default [
     key: PASSWORD_LENGTH,
     value: "Độ dài mật khẩu",
   },
+  {
+    key: GENERATE,
+    value: "Tạo"
+  }
 ];
