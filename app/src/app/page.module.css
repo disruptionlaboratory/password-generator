@@ -45,8 +45,29 @@
     .spinner, .clipboard {
         background-color: transparent;
         border: 0;
+        cursor: pointer;
         svg {
             transform: scale(1.5);
+        }
+    }
+
+    .actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .passwordContainer {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .clipboard {
+            margin-left: 0;
+            margin-right: auto;
         }
     }
 }

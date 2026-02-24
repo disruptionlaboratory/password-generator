@@ -6,8 +6,9 @@ import {
   INCLUDE_DIGITS,
   INCLUDE_LOWERCASE,
   INCLUDE_SPECIAL_CHARACTERS,
-  INCLUDE_UPPERCASE, PASSWORD_GENERATOR,
-  PASSWORD_LENGTH
+  INCLUDE_UPPERCASE,
+  PASSWORD_GENERATOR,
+  PASSWORD_LENGTH,
 } from "@/app/strings";
 import styles from "./page.module.css";
 import { getTranslator } from "@/app/utils/translation";
@@ -45,8 +46,8 @@ export default function Home() {
 
   const regenerate = () => setPassword(generatePassword(options));
 
-  const langTag = navigator.language
-  const isoCode = langTag.split('-')[0];
+  const langTag = navigator.language;
+  const isoCode = langTag.split("-")[0];
   const t = getTranslator(isoCode);
 
   return (
@@ -102,15 +103,25 @@ export default function Home() {
             />
           </label>
         </form>
-        <button className={styles.clipboard} onClick={() => {
-          navigator.clipboard
-            .writeText(password)
-            .then(() => {
-              alert("Copied to clipboard");
-            });
-        }}><Clipboard strokeColor={"#fff"} /></button>
-        <div className={styles.password}>{password}</div>
-        <button className={styles.spinner} onClick={regenerate}><Spinner strokeColor={"#fff"} /></button>
+
+        <div className={styles.actions}>
+          <div className={styles.passwordContainer}>
+            <div className={styles.password}>{password}</div>
+            <button className={styles.spinner} onClick={regenerate}>
+              <Spinner strokeColor={"#fff"} />
+            </button>
+          </div>
+          <button
+            className={styles.clipboard}
+            onClick={() => {
+              navigator.clipboard.writeText(password).then(() => {
+                alert("Copied to clipboard");
+              });
+            }}
+          >
+            <Clipboard strokeColor={"#fff"} />
+          </button>
+        </div>
       </main>
     </div>
   );
